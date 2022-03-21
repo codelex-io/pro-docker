@@ -22,3 +22,10 @@ Linux:
 - Lesson 03: Usage in CI/CD processes
 - Lesson 04: Improvements of Docker images, private registries
 - ?
+
+
+## Docker Helpers
+
+Docker cheatsheet - contains most of needed information about how Docker CLI commands
+
+https://dockerlabs.collabnix.com/docker/cheatsheet/

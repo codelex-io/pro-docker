@@ -22,3 +22,14 @@ Linux:
 - Lesson 03: Usage in CI/CD processes
 - Lesson 04: Improvements of Docker images, private registries
 - ?
+
+
+## Useful links
+
+Docker cheatsheet - contains most of needed information about how Docker CLI commands
+
+https://dockerlabs.collabnix.com/docker/cheatsheet/
+
+Docker hub - world's largest library and community for container images
+
+https://hub.docker.com/

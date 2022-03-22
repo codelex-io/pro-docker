@@ -14,8 +14,8 @@ Run docker login command and authenticate with your credentials to Dockerhub
 
 Build an image that you can upload to the Dockerhub
 
-    Docker build -t <username>/<project-name>:<tag>
-    Docker build -t docker-course/pro-docker:latest
+    Docker build -t <username>/<project-name>:<tag> .
+    Docker build -t docker-course/pro-docker:latest .
     
 ## Docker push
 

@@ -104,6 +104,21 @@ By default build command looks for file with name "Dockerfile".
 It can be changed with option "-f"
 
     docker build . -f exercise_02/Dockerfile
+    
+### Docker inspect
+
+Shows information about image
+
+    docker inspect <Image>
+    
+It helps to check the information of an image if needed. It provides useful information like set environmental
+variables, Container config, Command to be run at start, Volumes, Ports etc
+
+### Docker rmi
+
+Removed a specific image from local repository
+
+    docker rmi <CONTAINER_ID>
 
 ### Docker login
 
@@ -117,11 +132,7 @@ Pushes an image to the container repository, where you logged in. Requires logge
 
     docker push <IMAGE>
     
-### Docker rmi
 
-Removed a specific image from local repository
-
-    docker rmi <CONTAINER_ID>
 
 
 

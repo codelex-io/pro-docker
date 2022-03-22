@@ -17,6 +17,8 @@ Build an image that you can upload to the Dockerhub
     Docker build -t <username>/<project-name>:<tag> .
     Docker build -t docker-course/pro-docker:latest .
     
+. (dot) means that Dockerfile will be searched in current directory
+    
 ## Docker push
 
 Push a built image to Dockerhub

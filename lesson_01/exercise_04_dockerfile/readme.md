@@ -118,6 +118,18 @@ It can be solved by using ARG and ENV instructions together
 After building an image with a specific ARG_APP_VERSION variable, the image will
 have APP_VERSION environmental variable available on runtime.
 
+### COPY
+
+The COPY instruction copies new files or directories from <src> and adds them to the filesystem of the container at the path <dest>.
+
+Multiple <src> resources may be specified but the paths of files and directories will be interpreted as relative to the source of the context of the build.
+
+### ADD
+
+The ADD instruction copies new files, directories or remote file URLs from <src> and adds them to the filesystem of the image at the path <dest>.
+    
+Multiple <src> resources may be specified but if they are files or directories, their paths are interpreted as relative to the source of the context of the build.
+
 ### VOLUME
 
 Volume instructions creates a mount point with a specified name and marks it as future mounted volume. 

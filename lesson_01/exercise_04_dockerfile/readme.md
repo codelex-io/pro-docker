@@ -1,6 +1,10 @@
 # Dockerfile
 
-Dockerfile Commands 
+Dockerfile reference
+
+https://docs.docker.com/engine/reference/builder/
+
+This gives examples for each command
 
 ### FROM
 

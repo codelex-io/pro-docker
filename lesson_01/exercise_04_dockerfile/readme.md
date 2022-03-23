@@ -26,7 +26,7 @@ You can use \ (backslash) to continue a single RUN command onto the next line
         
 You can also use different shells if desired
 
-    RUN ["/bin/bash", "-c", "echo 'Hello Docker!'"]
+    RUN ["sh", "-c", "echo 'Hello Docker!'"]
     
 ### CMD
 CMD instructions is command parameter function. 
@@ -38,12 +38,12 @@ CMD has 3 forms:
 First form is shell form. There the command is written in shell syntax 
   
     CMD command param1 param2
-    CMD /bin/bash -c "echo 'Hello World'"
+    CMD sh -c "echo 'Hello World'"
 
 Second form is exec form similar to "Docker exec" command, where executable and its parameters is provided
 
     CMD ["executable","param1","param2"]
-    CMD ["/bin/bash", "-c", "echo Hello Docker!"]
+    CMD ["sh", "-c", "echo Hello Docker!"]
     
 Third form is parameter form. In that case parameters are provided as arguments to ENTRYPOINT instruction
     
@@ -60,12 +60,12 @@ Entrypoint has the two forms which are similar to first two forms of CMD
 First form is shell form. There the command is written in shell syntax 
   
     ENTRYPOINT command param1 param2
-    ENTRYPOINT /bin/bash -c "echo 'Hello World'"
+    ENTRYPOINT sh -c "echo 'Hello World'"
 
 Second form is exec form similar to "Docker exec" command, where executable and its parameters is provided
 
     ENTRYPOINT ["executable","param1","param2"]
-    ENTRYPOINT ["/bin/bash", "-c", "echo Hello Docker!"]
+    ENTRYPOINT ["sh", "-c", "echo 'Hello Docker!'"]
     
 ### ENTRYPOINT + CMD
 
@@ -144,6 +144,8 @@ In example All files and folders from .(dot) folder, which is equal to the curre
 ADD instruction is similar to COPY command and mostly they work they same way. 
     
 The difference is that ADD instruction can also handles tar files decompression and URLS. 
+    
+    ADD compressed.tar.gz /app/src/
 
 ### VOLUME
 
@@ -152,7 +154,9 @@ It is then added as a volume on runtime.
 
     VOLUME ["/data"]
     
-It can be used for defining storage for database volumes or other types of dynamic data.
+It can be used for defining storage for database volumes or other types of dynamic data. 
+    
+    
 
 ### USER
 

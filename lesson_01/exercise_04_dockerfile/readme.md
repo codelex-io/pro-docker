@@ -136,12 +136,16 @@ have APP_VERSION environmental variable available on runtime.
 
 ### COPY
 
-The COPY instruction copies files from host system <src> folder to Docker image <dest> folder
+The COPY instruction copies files from host system <src> folder to Docker image <dest> folder.
     
     COPY [--chown=<user>:<group>] <src>... <dest>
     COPY . /app/src/
     
-In example All files and folders from .(dot) folder, which is equal to the current directory would be copied to the /app/src folder on the Docker image
+In case of not providing --chown option, data will be copied with the current user ownership. To change ownership provide --chown option
+    
+    COPY --chown root:application . /app/src/
+   
+In example All files and folders from .(dot) folder, which is equal to the current directory would be copied to the /app/src folder on the Docker image. When --chown option is provided files and folders will have root owner and application group permission.
     
 ### ADD
 

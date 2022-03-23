@@ -7,25 +7,22 @@ ENV APP_AUTHOR="docker-student"
 ENV APP_VERSION="1.0"
 
 RUN mkdir - /logs && touch /logs/logs.txt
-RUN echo "Today is a good day!"
 
 LABEL version="1.0"
 LABEL author="docker-student"
 
-#CMD ["Hello World"]
+# Run image infinitely, unless it is stopped
+#ENTRYPOINT ["tail", "-f", "/dev/null"]
 
-#CMD ["powershell", "-c", "echo Hello Docker!"]
-
-
-#ENTRYPOINT sh -c "echo"
-
-#ENTRYPOINT ["top", "-b"]
-#CMD ["-c"]
-
-ENTRYPOINT ["tail", "-f", "/dev/null"]
+# Run image once. Just execute a specific command
+ENTRYPOINT ["sh", "-c"]
+CMD ["echo 'Hello Docker!'"]
 
 EXPOSE 443
 EXPOSE 8080/udp
 EXPOSE 9000/tcp
 EXPOSE 9090
 EXPOSE 80
+
+
+

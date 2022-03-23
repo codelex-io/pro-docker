@@ -17,7 +17,7 @@ Linux:
 
 ## Lessons
 
-- Lesson 01: Docker basics
+- [Lesson 01: Docker basics](./lesson_01/)
 - Lesson 02: Docker compose
 - Lesson 03: Usage in CI/CD processes
 - Lesson 04: Improvements of Docker images, private registries

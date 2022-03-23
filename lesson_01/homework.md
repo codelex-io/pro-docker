@@ -16,7 +16,7 @@ Instructions that should be checked: COPY, ADD, VOLUME, USER, WORKDIR, STOPSIGNA
 
 ### Base Assignment
 
-Create your own Dockerfile. 
+Creating your own Dockerfile
 
 - Choose an image of your own choice from [DockerHub](https://hub.docker.com/search?type=image). It can be PHP, Node.js, Mysql or any other image. It is advised to use Official images. Use it as Base Image of your Dockerfile.
 - Create a script of your own choice that can be executed from the container. It can be anything simple as "script.php", which would echo "Hello Docker!" to the console.

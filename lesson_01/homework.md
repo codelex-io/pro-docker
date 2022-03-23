@@ -6,6 +6,7 @@
  - Passing Arguments to PHP script https://www.igorkromin.net/index.php/2017/12/07/how-to-pass-parameters-to-your-php-script-via-the-command-line/
  - Passing Argument to Node.js script https://nodejs.org/en/knowledge/command-line/how-to-parse-command-line-arguments/
  - How to keep Docker container running https://devopscube.com/keep-docker-container-running/
+ - How to bind Host directory to Container directory https://docs.docker.com/storage/bind-mounts/ 
 
 ## Description
 
@@ -41,7 +42,7 @@ Reading about "Docker history <Container ID>" command. It is available at [Docke
  
  - Add a CMD argument that can be passed to your script. It can be something like "version", "greeting" or anything else. There are two example references for [PHP](https://www.igorkromin.net/index.php/2017/12/07/how-to-pass-parameters-to-your-php-script-via-the-command-line/) and [Node.js](https://nodejs.org/en/knowledge/command-line/how-to-parse-command-line-arguments/) on how to pass arguments to scripts.
 
-*Create additional Dockerfile (Healthcheck)*
+*Create additional Healthcheck Dockerfile*
  
 - Create a new Dockerfile. For separation, it can be named differently from the Dockerfile created for Base Assignment
 - Choose an image of your own choice from [DockerHub](https://hub.docker.com/search?type=image). It can be PHP, Node.js, Mysql or any other image. It is advised to use Official images. Use it as Base Image of your Dockerfile.
@@ -56,4 +57,19 @@ Reading about "Docker history <Container ID>" command. It is available at [Docke
 - PUSH your image to [DockerHub](https://hub.docker.com/search?type=image). Image must be published with specific version "homework_bonus".
 - Image must be available on Dockerhub with a specific tag. It should look something like <your username>/<your project name>:homework_bonus
  
+*Create additional Webserver Dockerfile* (hard)
+ 
+Note: For easy of development, Directory binding can be used that bind host directory to container directory https://docs.docker.com/storage/bind-mounts/ 
+
+- Create a new Dockerfile. For separation, it can be named differently from the Dockerfile created for Base Assignment or the First Bonus assignment
+- Choose an image of your own choice from [DockerHub](https://hub.docker.com/search?type=image). It should be an image like [Node.js](https://hub.docker.com/_/node), [Nginx](https://hub.docker.com/_/nginx)+PHP or any other webserver with your desired programming language. You can create a webserver manually if desired.. It is advised to use Official images. Use it as Base Image of your Dockerfile.
+- Add a number that can be used inside the webserver
+- Create an endpoint GET "/increment" in the webserver that would increase the number and display it
+- Create an endpoint GET "/decrement" in the webserver that would increase the number and display it
+- Expose ports that are required for the server to be reachable from localhost:8081 or some different port localhost:XXXX
+- COPY your code inside the Dockerfile to a specific directory so that webserver accesses the data and works, when building the image
+- Create a public repository on [DockerHub](https://hub.docker.com/search?type=image) with name Lesson_01_homework_bonus
+- BUILD your image locally
+- PUSH your image to [DockerHub](https://hub.docker.com/search?type=image). Image must be published with specific version "homework_bonus".
+- Image must be available on Dockerhub with a specific tag. It should look something like <your username>/<your project name>:homework_bonus
 

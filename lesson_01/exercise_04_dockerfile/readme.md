@@ -106,7 +106,7 @@ ARG instructions sets argument values for building an image and they are only av
 
     ARG APP_VERSION="1.0"
     
-### ARG + EVN
+### ARG + ENV
 
 Sometimes there is a need to set specific variables when building images, but ARG variables do not persistent to runtime.
 It can be solved by using ARG and ENV instructions together
@@ -120,15 +120,20 @@ have APP_VERSION environmental variable available on runtime.
 
 ### COPY
 
-The COPY instruction copies new files or directories from <src> and adds them to the filesystem of the container at the path <dest>.
-
-Multiple <src> resources may be specified but the paths of files and directories will be interpreted as relative to the source of the context of the build.
-
+The COPY instruction copies files from host system <src> folder to Docker image <dest> folder
+    
+    COPY [--chown=<user>:<group>] <src>... <dest>
+    COPY . /app/src/
+    
+In example All files and folders from .(dot) folder, which is equal to the current directory would be copied to the /app/src folder on the Docker image
+    
 ### ADD
 
-The ADD instruction copies new files, directories or remote file URLs from <src> and adds them to the filesystem of the image at the path <dest>.
+ADD instruction is similar to COPY command and mostly they work they same way. 
     
-Multiple <src> resources may be specified but if they are files or directories, their paths are interpreted as relative to the source of the context of the build.
+The difference is that ADD instruction can also handles tar files decompression and URLS. 
+    
+
 
 ### VOLUME
 

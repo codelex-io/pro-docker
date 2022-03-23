@@ -1,4 +1,6 @@
-##Useful links:
+# Homework lesson_01
+
+## Useful links:
  - Docker command line reference https://docs.docker.com/engine/reference/commandline/cli/
  - Dockerfile reference https://docs.docker.com/engine/reference/builder/
  - Passing Arguments to PHP script https://www.igorkromin.net/index.php/2017/12/07/how-to-pass-parameters-to-your-php-script-via-the-command-line/
@@ -6,7 +8,7 @@
 
 ## Description
 
-### Finish reading Dockerfile reference
+### Reading
 
 Finish reading Dockerfile reference. 
 

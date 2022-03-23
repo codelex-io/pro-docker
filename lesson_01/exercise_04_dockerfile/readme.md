@@ -74,8 +74,20 @@ Entrypoint and CMD can be used together. Entrypoint can be set to stable default
 CMD can have additional defaults set that are more likely to be changed.
 
     FROM ubuntu
-    ENTRYPOINT ["top", "-b"]
-    CMD ["-c"]
+    ENTRYPOINT ["sh", "-c"]
+    CMD ["echo 'Hello World!'"]
+    # When container is run this translates to 
+    # sh -c "echo 'Hello World!'"
+    
+CMD command arguments can be changed, when running a container. ENTRYPOINT is executed the same way each time the container is run.
+
+    docker run <Image> "echo 'Hello Docker!'"
+    # It is equal to changing CMD parameter in Dockerfile
+    ENTRYPOINT ["sh", "-c"]
+    CMD ["echo 'Hello World!'"]
+    # When container is run this translates to
+    # sh -c "echo 'Hello Docker!'"
+    
 
 ### LABEL
 
@@ -132,8 +144,6 @@ In example All files and folders from .(dot) folder, which is equal to the curre
 ADD instruction is similar to COPY command and mostly they work they same way. 
     
 The difference is that ADD instruction can also handles tar files decompression and URLS. 
-    
-
 
 ### VOLUME
 

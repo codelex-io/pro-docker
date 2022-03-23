@@ -17,6 +17,8 @@ Examples are available at official [Dockerfile Reference](https://docs.docker.co
 
 Instructions that should be checked: COPY, ADD, VOLUME, USER, WORKDIR, STOPSIGNAL, ONBUILD, STOPSIGNAL, HEALTHCHECK
 
+Reading about "Docker history <Container ID>" command. It is available at [Docker command line reference](https://docs.docker.com/engine/reference/commandline/cli/). It can be used to check commands that are run for specific images.
+
 ### Base Assignment
 
 Create your own Dockerfile

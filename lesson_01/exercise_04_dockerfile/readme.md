@@ -168,13 +168,20 @@ USER isntructions sets the user name (or UID) and optionally the user group (or 
 
     USER application
     
-###WORKDIR
+### WORKDIR
 
 Workdir sets the woroking directory for following commands.
 
     WORKDIR /app
 
 ### STOPSIGNAL
+    
+STOPSIGNAL defines the stop signal that should be sent to the container, when container is issued stop command with "Docker stop <Container ID>"
+
+    # Default. Normal stop signal
+    STOPSIGNAL SIGTERM
+    # Kill container signal
+    STOPSIGNAL SIGKILL
 
 ### ONBUILD
 

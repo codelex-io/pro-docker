@@ -119,6 +119,12 @@ variables, Container config, Command to be run at start, Volumes, Ports etc
 Removed a specific image from local repository
 
     docker rmi <CONTAINER_ID>
+    
+### Docker history
+
+See history of a Docker image
+
+    docker history mysql:8
 
 ### Docker login
 

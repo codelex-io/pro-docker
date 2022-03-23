@@ -1,6 +1,6 @@
 # Dockerfile
 
-Dockerfile has X main commands
+Dockerfile Commands 
 
 ### FROM
 

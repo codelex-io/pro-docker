@@ -122,7 +122,7 @@ Removed a specific image from local repository
     
 ### Docker history
 
-See history of a Docker image. It shows the instructions that Docker image executes from last to first instruction.
+See history of a Docker image. It shows the instructions that Docker image executes from last to first instruction in ascending order.
 
     docker history mysql:8
 

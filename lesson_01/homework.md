@@ -70,6 +70,6 @@ Note: For easy of development, Directory binding can be used that bind host dire
 - COPY your code inside the Dockerfile to a specific directory so that webserver accesses the data and works, when building the image
 - Create a public repository on [DockerHub](https://hub.docker.com/search?type=image) with name Lesson_01_homework_bonus
 - BUILD your image locally
-- PUSH your image to [DockerHub](https://hub.docker.com/search?type=image). Image must be published with specific version "homework_bonus".
-- Image must be available on Dockerhub with a specific tag. It should look something like <your username>/<your project name>:homework_bonus
+- PUSH your image to [DockerHub](https://hub.docker.com/search?type=image). Image must be published with specific version "homework_bonus_2".
+- Image must be available on Dockerhub with a specific tag. It should look something like <your username>/<your project name>:homework_bonus_2
 

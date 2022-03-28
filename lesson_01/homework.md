@@ -68,7 +68,7 @@ Note: For easy of development, Directory binding can be used that bind host dire
 - Create an endpoint GET "/decrement" in the webserver that would increase the number and display it
 - Expose ports that are required for the server to be reachable from localhost:8081 or some different port localhost:XXXX
 - COPY your code inside the Dockerfile to a specific directory so that webserver accesses the data and works, when building the image
-- Create a public repository on [DockerHub](https://hub.docker.com/search?type=image) with name Lesson_01_homework_bonus. If you have completed your first bonus task, the repository should already exist
+- Create a public repository on [DockerHub](https://hub.docker.com/search?type=image) with name Lesson_01_homework_bonus_2.
 - BUILD your image locally
 - PUSH your image to [DockerHub](https://hub.docker.com/search?type=image). Image must be published with specific version "homework_bonus_2".
 - Image must be available on Dockerhub with a specific tag. It should look something like <your username>/<your project name>:homework_bonus_2

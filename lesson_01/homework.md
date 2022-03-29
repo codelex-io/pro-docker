@@ -36,7 +36,7 @@ Reading about "Docker history <Container ID>" command. It is available at [Docke
 - PUSH your image to [DockerHub](https://hub.docker.com/search?type=image). Image must be published with specific version "homework".
 - Image must be available on Dockerhub with a specific tag. It should look something like <your username>/<your project name>:homework
 
-### Bonus Assigments
+### Bonus Assignments
 
 *Adding additional functionality to your Dockerfile from Base Assignment*
  

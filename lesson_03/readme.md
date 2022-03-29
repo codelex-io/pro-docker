@@ -1,7 +1,7 @@
-lesson_03 readme.md
+lesson_02 readme.md
 
-### usage in CI/CD
+# Docker-compose running a container
 
-### how to usage flags in building running , starting up. 
+Add containers from homework to Docker-compose
 
-Example -  docker build --build_arg my_build . etc
+If homework not available - provide my own implementation to be used.

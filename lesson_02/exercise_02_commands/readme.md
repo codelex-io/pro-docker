@@ -4,14 +4,38 @@
 
 https://docs.docker.com/compose/reference/
 
-## docker-compose commands
+## Docker compose commands
 
-docker-compose up
+Most used docker compose commands
 
-docker-compose down
+### Detached option
 
-docker-compose kill
+    docker compose <command> -d
 
-docker-compose start
+### Starting
 
-docker-compose restart
+    docker compose start  
+
+### Stopping
+    
+    docker compose stop
+
+### Killing
+
+    docker compose kill
+
+### Up (Create + Start)
+
+    docker compose up
+
+### Down (Stop + Remove)
+
+    docker compose down
+
+### Restart
+
+    docker compose restart
+
+### Build
+
+    docker compose build

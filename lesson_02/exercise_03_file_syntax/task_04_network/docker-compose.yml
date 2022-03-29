@@ -1,0 +1,28 @@
+version: "3.9"
+
+services:
+  proxy:
+    build: .
+    networks:
+      - frontend
+  app:
+    build: .
+    networks:
+      - frontend
+      - backend
+  db:
+    image: postgres
+    networks:
+      - backend
+
+networks:
+  frontend:
+    ## Use a custom driver
+    driver: bridge
+  backend:
+    driver: bridge
+    ## Use a custom driver which takes special options
+    #driver: custom-driver-2
+    #driver_opts:
+    #  foo: "1"
+    #  bar: "2"

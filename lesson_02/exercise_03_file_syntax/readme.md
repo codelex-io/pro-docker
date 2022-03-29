@@ -2,16 +2,6 @@
 
 ## Reference
 
-https://github.com/compose-spec/compose-spec/blob/master/spec.md
+https://docs.docker.com/compose/compose-file/compose-file-v3/
 
-### Services
 
-### Build
-
-### Configs
-
-### Entry-point
-
-### Volumes
-
-### Networks

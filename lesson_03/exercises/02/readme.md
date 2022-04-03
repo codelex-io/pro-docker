@@ -13,7 +13,7 @@ the image.
 Build the Dockerfile that was created. Add a tag: `exercise_02_image`
 Run a new container with a name: `exercise_02_container`
 
-Execute `git --version` inside the running container to check it is installed correctly
+Execute `git --version` inside the running container to check if it is installed correctly
 
 ### Requirements for Completion
 

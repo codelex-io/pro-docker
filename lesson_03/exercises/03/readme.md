@@ -13,5 +13,7 @@ When running the container, console prints contents of the specified file (defau
 
 ### Requirements for Completion
 
-- Run a container and display contents of https://github.com/codelex-io/pro-docker/blob/main/readme.md
-- Run a container and display contents of https://github.com/codelex-io/pro-docker/blob/main/.gitignore
+- Build container without build argument
+- Run a container and display contents of https://raw.githubusercontent.com/codelex-io/pro-docker/main/readme.md
+- Build container with .gitignore build argument
+- Run a container and display contents of https://raw.githubusercontent.com/codelex-io/pro-docker/main/.gitignore

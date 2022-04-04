@@ -1,13 +1,23 @@
-# Exercise 03
+# Exercise 04
 
 ## Introduction
 
-How to run a web server
+How to use volumes
 
 ### Description
 
-Create a node.js web server [Start with node.js web server here](https://nodejs.org/en/docs/guides/nodejs-docker-webapp/)
+Create a few Docker images that can transform an image from original image folder `images/original` and saves it in the folder `images/modified`
+
+There must be Docker images that can do the following:
+- rotate image by 90 degrees clockwise
+- flip image horizontally
+
+For image modification it is possible to use [ImageMagick CLI](https://imagemagick.org/script/command-line-processing.php)
 
 ### Requirements for Completion
+- After running the Docker image for rotating images with `images` folder as Mounted folder, there should be a rotated image in the `images/modified` folder. 
+- After running the Docker image for flipping images with `images` folder as Mounted folder, there should be a flipped image in the `images/modified` folder
 
-- http://localhost:49160/ displays "Hello World"
+### Bonus difficulty (optional)
+
+Create a single image for both functions. Add the choice of transformation as an additional parameter

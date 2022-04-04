@@ -6,8 +6,6 @@ Adding a web server to docker-compose
 
 ### Description
 
-# Exercise
-
 You must spin up multiple Docker containers using `docker compose`, attention - you will need to write some code as well for web server and to connect to MQ & DB.
 
 ## App1 container
@@ -26,7 +24,6 @@ Any type of the database with a single table where a counter is stored.
 
 App2 starts a webserver on port 8081 and exposes an url http://localhost:8081/pong that displays counter value.
 
-
 ### Requirements for Completion
 
-- All servers are work
+- All servers are working

@@ -1,4 +1,4 @@
-# Exercise 03
+# Exercise 06
 
 ## Introduction
 

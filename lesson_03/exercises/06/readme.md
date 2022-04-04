@@ -2,12 +2,16 @@
 
 ## Introduction
 
-Adding a webserver to docker-compose
+Adding a web server to docker-compose
 
 ### Description
 
-Add your webserver of exercise_04 to docker-compose
+Create a docker-compose.yml and add exercise_04 web server to it.
+
+Change the outside port to 49161.
 
 ### Requirements for Completion
 
-- http://localhost:49160/ displays "Hello World"
+- server config should be available in Docker-compose.yml
+- Server should be started with docker compose up command instead of docker run command
+- http://localhost:49161/ displays "Hello World"

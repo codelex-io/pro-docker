@@ -15,5 +15,4 @@ When running the container, console prints contents of the specified file (defau
 
 - Build container without build argument
 - Run a container and display contents of https://raw.githubusercontent.com/codelex-io/pro-docker/main/readme.md
-- Build container with .gitignore build argument
 - Run a container and display contents of https://raw.githubusercontent.com/codelex-io/pro-docker/main/.gitignore

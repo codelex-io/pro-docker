@@ -1,3 +1,5 @@
-lesson_04 readme.md
+# Lesson 4
 
-Development in docker, for example - https://code.visualstudio.com/docs/remote/containers
+## Docker-compose usage exercises
+
+[exercises](./exercises)
